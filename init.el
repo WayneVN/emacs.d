@@ -89,8 +89,6 @@
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
-(require 'init-csv)
-(require 'init-erlang)
 (require 'init-javascript)
 (require 'init-php)
 (require 'init-org)

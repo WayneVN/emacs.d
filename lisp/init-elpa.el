@@ -16,14 +16,14 @@
 
 (when (< emacs-major-version 24)
   ;; Mainly for ruby-mode
-  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")))
+  (add-to-list 'package-archives '("marmalade" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")))
 
 ;; We include the org repository for completeness, but don't normally
 ;; use it.
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
+(add-to-list 'package-archives '("org" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/"))
 
 (when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+  (add-to-list 'package-archives '("gnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
 
 
 (defconst sanityinc/no-ssl (or (< emacs-major-version 24)
@@ -33,8 +33,8 @@
 ;;; Also use Melpa for most packages
 (add-to-list 'package-archives
              `("melpa" . ,(if sanityinc/no-ssl
-                              "http://melpa.org/packages/"
-                            "https://melpa.org/packages/")))
+                              "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/"
+                            "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 ;; NOTE: In case of MELPA problems, the official mirror URL is
 ;; https://www.mirrorservice.org/sites/stable.melpa.org/packages/
